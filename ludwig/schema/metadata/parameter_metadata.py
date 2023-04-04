@@ -59,7 +59,6 @@ class ParameterMetadata:
 
     default_value_reasoning: Union[str, None] = None
     """The reasoning behind the default value for this parameter."""
-
     example_value: Union[List[Any], None] = None
     """Examples of other values that can be used for this parameter."""
 

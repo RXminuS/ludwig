@@ -262,7 +262,6 @@ def set_preprocessing_parameters(config: "ModelConfig") -> None:  # noqa: F821
 
 def _set_max_sequence_length(config: "ModelConfig") -> None:  # noqa: F821
     """Ensures that `max_sequence_length` is never less than `sequence_length`."""
-
     types_with_sequence_length = [SEQUENCE, TEXT]
     for input_feature in config.input_features:
         if input_feature.type in types_with_sequence_length:

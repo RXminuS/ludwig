@@ -2,10 +2,9 @@
 
 Driver script which:
 
-(1) Builds a base config by performing type inference and populating config
-    w/default combiner parameters, training parameters, and hyperopt search space
-(2) Tunes config based on resource constraints
-(3) Runs hyperparameter optimization experiment
+(1) Builds a base config by performing type inference and populating config     w/default combiner parameters, training
+parameters, and hyperopt search space (2) Tunes config based on resource constraints (3) Runs hyperparameter
+optimization experiment
 """
 import argparse
 import copy
@@ -180,8 +179,8 @@ def create_auto_config_with_dataset_profile(
 ) -> dict:
     """Returns the best single-shot Ludwig config given a Ludwig dataset or dataset profile.
 
-    If only the dataset is provided, then a new profile is computed.
-    Only one of the dataset or dataset_profile should be specified, not both.
+    If only the dataset is provided, then a new profile is computed. Only one of the dataset or dataset_profile should
+    be specified, not both.
 
     This function is intended to eventually replace create_auto_config().
     """

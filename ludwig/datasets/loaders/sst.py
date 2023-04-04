@@ -24,13 +24,11 @@ from ludwig.datasets.loaders.dataset_loader import DatasetLoader
 class SSTLoader(DatasetLoader):
     """The SST dataset.
 
-    This dataset is constructed using the Stanford Sentiment Treebank Dataset.
-    This dataset contains binary labels (positive or negative) for each sample.
+    This dataset is constructed using the Stanford Sentiment Treebank Dataset. This dataset contains binary labels
+    (positive or negative) for each sample.
 
-    The original dataset specified 5 labels:
-    very negative, negative, neutral, positive, very positive with
-    the following cutoffs:
-    [0, 0.2], (0.2, 0.4], (0.4, 0.6], (0.6, 0.8], (0.8, 1.0]
+    The original dataset specified 5 labels: very negative, negative, neutral, positive, very positive with the
+    following cutoffs: [0, 0.2], (0.2, 0.4], (0.4, 0.6], (0.6, 0.8], (0.8, 1.0]
     """
 
     def __init__(
@@ -161,18 +159,14 @@ class SSTLoader(DatasetLoader):
 class SST2Loader(SSTLoader):
     """The SST2 dataset.
 
-    This dataset is constructed using the Stanford Sentiment Treebank Dataset.
-    This dataset contains binary labels (positive or negative) for each sample.
+    This dataset is constructed using the Stanford Sentiment Treebank Dataset. This dataset contains binary labels
+    (positive or negative) for each sample.
 
-    The original dataset specified 5 labels:
-    very negative, negative, neutral, positive, very positive with
-    the following cutoffs:
-    [0, 0.2], (0.2, 0.4], (0.4, 0.6], (0.6, 0.8], (0.8, 1.0]
+    The original dataset specified 5 labels: very negative, negative, neutral, positive, very positive with the
+    following cutoffs: [0, 0.2], (0.2, 0.4], (0.4, 0.6], (0.6, 0.8], (0.8, 1.0]
 
-    In the construction of this dataset, we remove all neutral phrases
-    and assign a negative label if the original rating falls
-    into the following range: [0, 0.4] and a positive label
-    if the original rating is between (0.6, 1.0].
+    In the construction of this dataset, we remove all neutral phrases and assign a negative label if the original
+    rating falls into the following range: [0, 0.4] and a positive label if the original rating is between (0.6, 1.0].
     """
 
     def __init__(
@@ -204,17 +198,14 @@ class SST2Loader(SSTLoader):
 class SST3Loader(SSTLoader):
     """The SST3 dataset.
 
-    This dataset is constructed using the Stanford Sentiment Treebank Dataset.
-    This dataset contains five labels (very negative, negative, neutral,
-    positive, very positive) for each sample.
+    This dataset is constructed using the Stanford Sentiment Treebank Dataset. This dataset contains five labels (very
+    negative, negative, neutral, positive, very positive) for each sample.
 
-    In the original dataset, the  5 labels: very negative, negative, neutral, positive,
-    and very positive have the following cutoffs:
-    [0, 0.4], (0.4, 0.6], (0.6, 1.0]
+    In the original dataset, the  5 labels: very negative, negative, neutral, positive, and very positive have the
+    following cutoffs: [0, 0.4], (0.4, 0.6], (0.6, 1.0]
 
-    This class pulls in an array of mixins for different types of functionality
-    which belongs in the workflow for ingesting and transforming
-    training data into a destination dataframe that can be use by Ludwig.
+    This class pulls in an array of mixins for different types of functionality which belongs in the workflow for
+    ingesting and transforming training data into a destination dataframe that can be use by Ludwig.
     """
 
     def __init__(
@@ -247,17 +238,14 @@ class SST3Loader(SSTLoader):
 class SST5Loader(SSTLoader):
     """The SST5 dataset.
 
-    This dataset is constructed using the Stanford Sentiment Treebank Dataset.
-    This dataset contains five labels (very negative, negative, neutral,
-    positive, very positive) for each sample.
+    This dataset is constructed using the Stanford Sentiment Treebank Dataset. This dataset contains five labels (very
+    negative, negative, neutral, positive, very positive) for each sample.
 
-    In the original dataset, the  5 labels: very negative, negative, neutral, positive,
-    and very positive have the following cutoffs:
-    [0, 0.2], (0.2, 0.4], (0.4, 0.6], (0.6, 0.8], (0.8, 1.0]
+    In the original dataset, the  5 labels: very negative, negative, neutral, positive, and very positive have the
+    following cutoffs: [0, 0.2], (0.2, 0.4], (0.4, 0.6], (0.6, 0.8], (0.8, 1.0]
 
-    This class pulls in an array of mixins for different types of functionality
-    which belongs in the workflow for ingesting and transforming
-    training data into a destination dataframe that can be use by Ludwig.
+    This class pulls in an array of mixins for different types of functionality which belongs in the workflow for
+    ingesting and transforming training data into a destination dataframe that can be use by Ludwig.
     """
 
     def __init__(

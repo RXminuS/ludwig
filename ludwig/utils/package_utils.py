@@ -5,10 +5,12 @@ import types
 class LazyLoader(types.ModuleType):
     """Lazily import a module, mainly to avoid pulling in large dependencies.
 
-    `contrib`, and `ffmpeg` are examples of modules that are large and not always
-    needed, and this allows them to only be loaded when they are used.
+    `contrib`, and `ffmpeg` are examples of modules that are large and not always needed, and this allows them to only
+    be loaded when they are used.
 
-    Copied from: https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/util/lazy_loader.py
+    Copied from:
+
+    https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/util/lazy_loader.py
     """
 
     # The lint error here is incorrect.

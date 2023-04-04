@@ -55,9 +55,10 @@ def get_absolute_module_key_from_submodule(module: torch.nn.Module, submodule: t
 
     Assumes that the keys in the submodule are relative to the module.
 
-    We find the params from the submodule in the module by comparing the data
-    pointers, since the data returned by named_parameters is by reference.
-    More information on checking if tensors point to the same place in storage can be found here:
+    We find the params from the submodule in the module by comparing the data pointers, since the data returned by
+    named_parameters is by reference. More information on checking if tensors point to the same place in storage can be
+    found here:
+
     https://discuss.pytorch.org/t/any-way-to-check-if-two-tensors-have-the-same-base/44310/2
     """
     absolute_keys = []

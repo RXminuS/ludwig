@@ -218,6 +218,7 @@ class RayTuneExecutor:
 
         Only applies to grid search and choice options.  See here for details:
 
+
         https://docs.ray.io/en/master/tune/api_docs/search_space.html#random-distributions-api
         """
         values = values.copy()
@@ -453,7 +454,6 @@ class RayTuneExecutor:
         decode_ctx,
         is_using_ray_backend=False,
     ):
-
         for gpu_id in ray.get_gpu_ids():
             # Previous trial may not have freed its memory yet, so wait to avoid OOM
             wait_for_gpu(gpu_id)
